@@ -52,11 +52,11 @@ muteBtn.addEventListener("click", () => {
 	if (muteBtn.textContent == "Mute") {
 		muteBtn.textContent = "Unmute";
 		console.log("Mute");
-		video.volume = 0;
+		video.muted = true;
 	} else {
 		muteBtn.textContent = "Mute";
 		console.log("Unmute");
-		video.volume = 1;
+		video.muted = false;
 	}
 });
 
